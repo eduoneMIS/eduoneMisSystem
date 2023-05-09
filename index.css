@@ -31,7 +31,9 @@ i {
 
 html,
 body {
+    align-items: center;
     height: 100%;
+    padding: 10px;
 }
 
 body {
@@ -43,6 +45,7 @@ body {
 .group-box {
     flex: 1;
     align-items: center;
+    margin: auto;
 }
 
 .area {
@@ -124,7 +127,7 @@ body {
 
 .menu-bar {
     width: 75%;
-    margin: 20px auto 0px auto;
+    margin: auto;
     padding: 10px 20px;
     display: flex;
     background-color: #0f4c81;
@@ -165,13 +168,13 @@ button {
 
 @media (max-width:802px) {
     p {
-        font-size: 15px;
+        font-size: 10px;
     }
 
     h1,
     h2,
     h3 {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .menu-bar button,
@@ -180,11 +183,11 @@ button {
     }
 
     .menu-bar img {
-        width: 50px;
+        width: 40px;
     }
 
     .area .big-title .title-text {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .memo .note,
@@ -193,7 +196,7 @@ button {
     }
 
     #go-home p {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .choose:active,
