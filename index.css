@@ -152,3 +152,43 @@ body {
 .menu-bar p {
     font-size: 15px;
 }
+
+@media (max-width:802px) {
+    p {
+        font-size: 15px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 20px;
+    }
+
+    .menu-bar button,
+    .qustion button {
+        border: 2px solid;
+    }
+
+    .menu-bar img {
+        width: 50px;
+    }
+
+    .area .big-title .title-text {
+        font-size: 20px;
+    }
+
+    .memo .note,
+    .memo #note {
+        font-size: 15px;
+    }
+
+    #go-home p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:811px) {
+    a {
+        display: block;
+    }
+}
