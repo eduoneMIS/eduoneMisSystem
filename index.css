@@ -116,6 +116,12 @@ body {
     font-size: 20px
 }
 
+.memo .note a:hover {
+    background-color: #0f4c81;
+    color: #f7bb01;
+    border: 2px solid #f7bb01;
+}
+
 .menu-bar {
     width: 75%;
     margin: 20px auto 0px auto;
@@ -153,6 +159,10 @@ body {
     font-size: 15px;
 }
 
+button {
+    cursor: pointer;
+}
+
 @media (max-width:802px) {
     p {
         font-size: 15px;
@@ -185,10 +195,16 @@ body {
     #go-home p {
         font-size: 10px;
     }
+
+    .choose:active,
+    .menu-bar button:active {
+        background-color: #f7bb01;
+        transition: 0.5s ease;
+    }
 }
 
 @media (max-width:811px) {
     a {
-        display: flex;
+        display: block;
     }
 }

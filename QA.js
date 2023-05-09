@@ -31,7 +31,7 @@ function only() {
     `;
     const true_BTN = document.getElementById("true");
     var done_BTN = document.getElementById("done");
-    note.innerHTML = `技術支援網站 - <a href="https://hackmd.io/@eduone-imstudy-MIS/ryyBe7Zpi#%E5%A6%82%E4%BD%95%E7%A2%BA%E8%AA%8D%E5%AD%B8%E7%94%9F%E7%9A%84%E5%B8%B3%E8%99%9F%E5%AF%86%E7%A2%BC-%E4%BE%8B%E5%A6%82-%E5%BF%98%E8%A8%98%E5%AD%B8%E7%94%9F%E5%B8%B3%E5%AF%86">如何確認學生的帳號密碼?</a>`
+    note.innerHTML = `技術支援網站 <a href="https://hackmd.io/@eduone-imstudy-MIS/ryyBe7Zpi#%E5%A6%82%E4%BD%95%E7%A2%BA%E8%AA%8D%E5%AD%B8%E7%94%9F%E7%9A%84%E5%B8%B3%E8%99%9F%E5%AF%86%E7%A2%BC-%E4%BE%8B%E5%A6%82-%E5%BF%98%E8%A8%98%E5%AD%B8%E7%94%9F%E5%B8%B3%E5%AF%86">如何確認學生的帳號密碼?</a>`
     done_BTN.addEventListener("click", function (event) {
         event.preventDefault();
         done();
@@ -51,7 +51,7 @@ function all() {
     <button class="choose" id="cant"><i class='bx bx-bug-alt'></i><p>無法開機</p></button>
     <button class="choose" id="On"><i class='bx bx-check'></i><p>已開啟</p></button>
     `;
-    note.innerHTML = `技術支援網站 - <a href=https://hackmd.io/@eduone-imstudy-MIS/r1X0il1-n#%E7%8B%80%E6%B3%81%E4%BA%8C-NAS%E5%AE%B9%E5%99%A8%E6%B2%92%E6%9C%89%E9%96%8B-">NAS容器沒有開</a>`
+    note.innerHTML = `技術支援網站 <a href=https://hackmd.io/@eduone-imstudy-MIS/r1X0il1-n#%E7%8B%80%E6%B3%81%E4%BA%8C-NAS%E5%AE%B9%E5%99%A8%E6%B2%92%E6%9C%89%E9%96%8B-">NAS容器沒有開</a>`
     const on_BTN = document.getElementById("On");
     const cant_BTN = document.getElementById("cant");
     var done_BTN = document.getElementById("done");
@@ -81,7 +81,7 @@ function reset_software() {
     `;
     var done_BTN = document.getElementById("done");
     const reset_BTN = document.getElementById("reset");
-    note.innerHTML = `技術支援網站 - <a href="https://hackmd.io/@eduone-imstudy-MIS/HJRLit5ns">萬試通 軟體安裝手冊</a>`
+    note.innerHTML = `技術支援網站 <a href="https://hackmd.io/@eduone-imstudy-MIS/HJRLit5ns">萬試通 軟體安裝手冊</a>`
 
     done_BTN.addEventListener("click", function (event) {
         event.preventDefault();
@@ -102,7 +102,7 @@ function configIP() {
     `;
     var done_BTN = document.getElementById("done");
     const setted_BTN = document.getElementById("setted");
-    note.innerHTML = `技術支援網站 - <a href="https://hackmd.io/@eduone-imstudy-MIS/HJRLit5ns#%E5%88%9D%E5%A7%8B%E8%A8%AD%E5%AE%9A-configtxt---IP">config IP尚未更換</a>`
+    note.innerHTML = `技術支援網站 <a href="https://hackmd.io/@eduone-imstudy-MIS/HJRLit5ns#%E5%88%9D%E5%A7%8B%E8%A8%AD%E5%AE%9A-configtxt---IP">config IP尚未更換</a>`
 
     done_BTN.addEventListener("click", function (event) {
         event.preventDefault();
