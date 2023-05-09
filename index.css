@@ -189,6 +189,6 @@ body {
 
 @media (max-width:811px) {
     a {
-        display: block;
+        display: flex;
     }
 }
