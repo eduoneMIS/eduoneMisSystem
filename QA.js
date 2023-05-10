@@ -113,7 +113,7 @@ function study123_software() {
     });
     only_BTN.addEventListener("click", function (event) {
         event.preventDefault();
-        reset_software()
+        only()
     });
 };
 
