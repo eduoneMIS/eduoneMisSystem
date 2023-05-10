@@ -98,7 +98,7 @@ function shoutDownNas() {
 
 // 萬試通無法開啟 問題
 function study123_software() {
-    big_title.innerHTML = `<i class='bx bxs-log-in'></i>
+    big_title.innerHTML = `<i class='bx bx-log-in'></i>
     <h2 class="title-text">無法登入萬試通</h2>`;
     qustion.innerHTML = `
     <button class="choose" id="all"><i class='bx bx-group'></i><p>全館</p></button>
