@@ -35,7 +35,7 @@ function power_cut() {
     `;
     var power_restart = document.getElementById("power-restart");
     var ready_to_cut = document.getElementById("ready-to-cut");
-    note.innerHTML = `請確認您當前的電力狀態<a href="https://nds.taipower.com.tw/ndsWeb/ndft112.aspx" target="_blank">台電停電查詢系統</a>`
+    note.innerHTML = `您當前的電力狀態<a href="https://nds.taipower.com.tw/ndsWeb/ndft112.aspx" target="_blank">台電停電查詢系統</a>`
     power_restart.addEventListener("click", function (event) {
         event.preventDefault();
         all();
