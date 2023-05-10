@@ -50,7 +50,7 @@ function power_readToCut() {
     big_title.innerHTML = `<i class='bx bxl-docker' ></i>
     <h2 class="title-text">請將容器關閉</h2>`;
     qustion.innerHTML = `
-    <button class="choose" id="docker-off-faild"><i class='bx bx-toggle-right' ></i><p>無法關閉<br>( 開關是灰色的 )</p></button>
+    <button class="choose" id="docker-off-faild"><i class='bx bx-toggle-right' ></i><p>無法關閉</p></button>
     <button class="choose" id="power-restart"><i class='bx bx-check' ></i><p>已關閉</p></button>
     `;
     var power_restart = document.getElementById("power-restart");

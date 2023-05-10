@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Ubuntu:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300&family=Open+Sans:wght@300;400&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     font-family: 'Noto Sans TC', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1,
@@ -115,7 +114,8 @@ body {
 
 .memo .note {
     color: #f7bb01;
-    font-size: 20px
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .memo .note a {
@@ -174,23 +174,12 @@ button {
 }
 
 @media (max-width:812px) {
-    * {
-        font-weight: normal;
-    }
 
-    p {
-        font-size: 12px;
-    }
-
-    h1,
-    h2,
-    h3 {
-        font-size: 12px;
-    }
 
     .menu-bar button,
     .qustion button {
         border: 2px solid;
+        font-size: 15px;
     }
 
     .menu-bar {
@@ -202,13 +191,13 @@ button {
     }
 
     .area .big-title .title-text {
-        font-size: 15px;
+        font-size: 18px;
         font-weight: bold;
     }
 
     .memo .note,
     .memo #note {
-        font-size: 8px;
+        font-size: 15px;
     }
 
     .memo {
@@ -220,7 +209,7 @@ button {
     }
 
     #go-home p {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .choose:active,
@@ -230,8 +219,7 @@ button {
     }
 
     .qustion .prompt-message {
-        font-size: 12px;
-
+        font-size: 15px;
     }
 }
 
