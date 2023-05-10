@@ -212,12 +212,6 @@ button {
         font-size: 15px;
     }
 
-    .choose:active,
-    .menu-bar button:active {
-        background-color: #f7bb01;
-        transition: 0.5s ease;
-    }
-
     .qustion .prompt-message {
         font-size: 15px;
     }
