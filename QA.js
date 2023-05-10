@@ -10,6 +10,7 @@ problum_list();
 function problum_list() {
     const study123_softwareBTN = document.getElementById("study123-software");
     const power_BTN = document.getElementById("power-failure");
+    note_fomate.innerHTML = `😊❤️👍`;
     power_BTN.addEventListener("click", function (event) {
         event.preventDefault();
         power_cut();
