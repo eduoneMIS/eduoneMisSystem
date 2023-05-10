@@ -155,11 +155,11 @@ function all() {
 
     on_BTN.addEventListener("click", function (event) {
         event.preventDefault();
-        fail()
+        only();
     });
     cant_BTN.addEventListener("click", function (event) {
         event.preventDefault();
-        fail()
+        fail();
     });
     done_BTN.addEventListener("click", function (event) {
         event.preventDefault();
