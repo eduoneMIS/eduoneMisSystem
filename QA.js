@@ -9,7 +9,10 @@ problum_list();
 function problum_list() {
     const study123_softwareBTN = document.getElementById("study123-software");
     const power_BTN = document.getElementById("power-failure");
-    note.textContent = `( • ˋ  _  ˊ • )`;
+    const emojis = ["o((>ω< ))o", "ᓚᘏᗢ", "(●'◡'●)", "╰(*°▽°*)╯", "ヾ(≧ ▽ ≦)ゝ", "(•ˋ _ ˊ•)"];
+    const randomIndex = Math.floor(Math.random() * emojis.length);
+    const randomEmoji = emojis[randomIndex];
+    note.textContent = randomEmoji;
     power_BTN.addEventListener("click", function (event) {
         event.preventDefault();
         power_cut();
