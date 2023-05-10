@@ -35,7 +35,7 @@ function power_cut() {
     <h2 class="title-text">您當前的電力狀態</h2>`;
     qustion.innerHTML = `
     <button class="choose" id="ready-to-cut"><i class='bx bx-shield-quarter'></i><p>將要停電</p></button>
-    <button class="choose" id="power-restart"><i class='bx bx-battery'></i><p>電力恢復</p></button>
+    <button class="choose" id="power-restart"><i class='bx bx-reset'></i><p>電力恢復</p></button>
     `;
     var power_restart = document.getElementById("power-restart");
     var ready_to_cut = document.getElementById("ready-to-cut");
