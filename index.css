@@ -32,7 +32,7 @@ html,
 body {
     align-items: center;
     height: 100%;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
 }
 
 body {
@@ -97,10 +97,10 @@ body {
     margin: auto;
 }
 
-.choose:hover,
-.menu-bar button:hover {
+.choose:active,
+.menu-bar button:active {
     background-color: #f7bb01;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
     box-shadow: 0px 0px 50px -10px rgba(0, 0, 0, 0.5);
 }
 
@@ -124,8 +124,9 @@ body {
     margin-bottom: 10px;
 }
 
-.memo .note a:hover {
+.memo .note a:active {
     background-color: #0f4c81;
+    transition: 0.3s ease;
     color: #f7bb01;
     border: 2px solid #f7bb01;
     box-shadow: 0px 0px 50px -10px rgba(0, 0, 0, 0.5);
