@@ -1,6 +1,5 @@
 var big_title = document.getElementsByClassName("big-title")[0];
 var qustion = document.getElementsByClassName("qustion")[0];
-var note_fomate = document.getElementsByClassName("note")[0];
 var note = document.getElementById("note");
 
 // 開始資訊助理
@@ -10,7 +9,7 @@ problum_list();
 function problum_list() {
     const study123_softwareBTN = document.getElementById("study123-software");
     const power_BTN = document.getElementById("power-failure");
-    note_fomate.innerHTML = `😊❤️👍`;
+    note.textContent = `😊❤️👍`;
     power_BTN.addEventListener("click", function (event) {
         event.preventDefault();
         power_cut();
@@ -103,7 +102,7 @@ function study123_software() {
     `;
     const all_BTN = document.getElementById("all");
     const only_BTN = document.getElementById("only");
-    note.innerHTML = `情況為【少數】或【全館】電腦無法登入`
+    note.innerHTML = `只有【少數】或【全館】無法登入`
     all_BTN.addEventListener("click", function (event) {
         event.preventDefault();
         all();
@@ -214,14 +213,14 @@ function fail() {
     big_title.innerHTML = `<i class='bx bxs-no-entry'></i>
     <h2 class="title-text">非常抱歉</h2>`;
     qustion.innerHTML = `<p class="prompt-message">您的問題較為複雜，涉及到專業領域須由工程師為您解決</p>`;
-    note_fomate.textContent = `請於【每周一至周五 9:30AM ~ 9:00PM】聯繫 - 金鑫資訊部`
+    note.textContent = `請於【每周一至周五 9:30AM ~ 9:00PM】聯繫 - 金鑫資訊部`
 }
 // 已完成
 function done() {
     big_title.innerHTML = `<i class='bx bx-like'></i>
     <h2 class="title-text">您已完成基本除錯</h2>`;
     qustion.innerHTML = `<p class="prompt-message">恭喜您</p>`;
-    note_fomate.textContent = `感謝您使用資訊助手`
+    note.textContent = `感謝您使用資訊助手`
 }
 
 
