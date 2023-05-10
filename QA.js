@@ -4,19 +4,112 @@ var note_fomate = document.getElementsByClassName("note")[0];
 var note = document.getElementById("note");
 
 // 開始資訊助理
-all_only();
+problum_list();
 
-// 初始
-function all_only() {
+// 問題清單
+function problum_list() {
+    const study123_softwareBTN = document.getElementById("study123-software");
+    const power_BTN = document.getElementById("power-failure");
+    power_BTN.addEventListener("click", function (event) {
+        event.preventDefault();
+        power_cut();
+    });
+    study123_softwareBTN.addEventListener("click", function (event) {
+        event.preventDefault();
+        study123_software();
+    });
+}
+
+
+
+
+
+
+// power問題
+function power_cut() {
+    big_title.innerHTML = `<i class='bx bxs-traffic-barrier'></i>
+    <h2 class="title-text">您當前的電力狀態</h2>`;
+    qustion.innerHTML = `
+    <button class="choose" id="ready-to-cut"><i class='bx bx-shield-quarter'></i><p>將要停電</p></button>
+    <button class="choose" id="power-restart"><i class='bx bx-battery'></i><p>電力恢復</p></button>
+    `;
+    var power_restart = document.getElementById("power-restart");
+    var ready_to_cut = document.getElementById("ready-to-cut");
+    note.innerHTML = `請確認您當前的電力狀態`
+    power_restart.addEventListener("click", function (event) {
+        event.preventDefault();
+        all();
+    });
+    ready_to_cut.addEventListener("click", function (event) {
+        event.preventDefault();
+        power_readToCut();
+    });
+}
+
+function power_readToCut() {
+    big_title.innerHTML = `<i class='bx bxl-docker' ></i>
+    <h2 class="title-text">請將容器關閉</h2>`;
+    qustion.innerHTML = `
+    <button class="choose" id="docker-off-faild"><i class='bx bx-toggle-right' ></i><p>無法關閉<br>( 開關是灰色的 )</p></button>
+    <button class="choose" id="power-restart"><i class='bx bx-check' ></i><p>已關閉</p></button>
+    `;
+    var power_restart = document.getElementById("power-restart");
+    var docker_off_faild = document.getElementById("docker-off-faild");
+    note.innerHTML = `技術支援網站 <a href="https://hackmd.io/@eduone-imstudy-MIS/r1X0il1-n#%E7%8B%80%E6%B3%81%E4%BA%8C-NAS%E5%AE%B9%E5%99%A8%E6%B2%92%E6%9C%89%E9%96%8B-">NAS容器如何關閉</a>`
+    power_restart.addEventListener("click", function (event) {
+        event.preventDefault();
+        shoutDownNas();
+    });
+    docker_off_faild.addEventListener("click", function (event) {
+        event.preventDefault();
+        fail();
+    });
+}
+
+function shoutDownNas() {
+    big_title.innerHTML = `<i class='bx bx-power-off'></i>
+    <h2 class="title-text">請長按NAS主機電源鍵進行關機</h2>`;
+    qustion.innerHTML = `
+    <button class="choose" id="shout-down-faild"><i class='bx bxs-error-circle'></i><p>無法關機</p></button>
+    <button class="choose" id="power-off"><i class='bx bx-check' ></i><p>已關機</p></button>
+    `;
+    var power_off = document.getElementById("power-off");
+    var shout_down_faild = document.getElementById("shout-down-faild");
+    note.innerHTML = `技術支援網站 <a href="https://hackmd.io/@eduone-imstudy-MIS/r1X0il1-n#--%E9%97%9C%E6%A9%9F-%E6%93%8D%E4%BD%9C">如何關機</a>`
+    shout_down_faild.addEventListener("click", function (event) {
+        event.preventDefault();
+        fail();
+    });
+    power_off.addEventListener("click", function (event) {
+        event.preventDefault();
+        done();
+    });
+}
+
+
+
+
+
+
+
+// 萬試通無法開啟 問題
+function study123_software() {
+    big_title.innerHTML = `<i class='bx bxs-log-in'></i>
+    <h2 class="title-text">無法登入萬試通</h2>`;
+    qustion.innerHTML = `
+    <button class="choose" id="all"><i class='bx bx-group'></i><p>全館</p></button>
+    <button class="choose" id="only"><i class='bx bx-user'></i><p>少數</p></button>
+    `;
     const all_BTN = document.getElementById("all");
     const only_BTN = document.getElementById("only");
+    note.innerHTML = `技術支援網站 <a href="https://hackmd.io/@eduone-imstudy-MIS/ryyBe7Zpi#%E5%A6%82%E4%BD%95%E7%A2%BA%E8%AA%8D%E5%AD%B8%E7%94%9F%E7%9A%84%E5%B8%B3%E8%99%9F%E5%AF%86%E7%A2%BC-%E4%BE%8B%E5%A6%82-%E5%BF%98%E8%A8%98%E5%AD%B8%E7%94%9F%E5%B8%B3%E5%AF%86">如何確認學生的帳號密碼?</a>`
     all_BTN.addEventListener("click", function (event) {
         event.preventDefault();
         all();
     });
     only_BTN.addEventListener("click", function (event) {
         event.preventDefault();
-        only();
+        reset_software()
     });
 };
 
@@ -48,10 +141,10 @@ function all() {
     <h2 class="title-text">請確認NAS主機以及容器是否開啟</h2>`;
     qustion.innerHTML = `
     <button class="choose" id="done"><i class='bx bx-like'></i><p>我解決了</p></button>
-    <button class="choose" id="cant"><i class='bx bx-bug-alt'></i><p>無法開機</p></button>
+    <button class="choose" id="cant"><i class='bx bx-power-off'></i><p>無法開機</p></button>
     <button class="choose" id="On"><i class='bx bx-check'></i><p>已開啟</p></button>
     `;
-    note.innerHTML = `技術支援網站 <a href=https://hackmd.io/@eduone-imstudy-MIS/r1X0il1-n#%E7%8B%80%E6%B3%81%E4%BA%8C-NAS%E5%AE%B9%E5%99%A8%E6%B2%92%E6%9C%89%E9%96%8B-">NAS容器沒有開</a>`
+    note.innerHTML = `技術支援網站 <a href=https://hackmd.io/@eduone-imstudy-MIS/r1X0il1-n#%E7%8B%80%E6%B3%81%E4%BA%8C-NAS%E5%AE%B9%E5%99%A8%E6%B2%92%E6%9C%89%E9%96%8B-">NAS容器沒有開</a><a href="https://hackmd.io/@eduone-imstudy-MIS/r1X0il1-n#--%E9%96%8B%E6%A9%9F-%E6%93%8D%E4%BD%9C">NAS主機怎麼開機</a>`
     const on_BTN = document.getElementById("On");
     const cant_BTN = document.getElementById("cant");
     var done_BTN = document.getElementById("done");

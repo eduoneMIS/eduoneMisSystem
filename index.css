@@ -119,6 +119,10 @@ body {
     font-size: 20px
 }
 
+.memo .note a {
+    margin-bottom: 10px;
+}
+
 .memo .note a:hover {
     background-color: #0f4c81;
     color: #f7bb01;
@@ -166,7 +170,15 @@ button {
     cursor: pointer;
 }
 
-@media (max-width:802px) {
+.qustion .prompt-message {
+    font-size: 20px;
+}
+
+@media (max-width:812px) {
+    /* * {
+        font-weight: normal;
+    } */
+
     p {
         font-size: 10px;
     }
@@ -174,7 +186,7 @@ button {
     h1,
     h2,
     h3 {
-        font-size: 15px;
+        font-size: 10px;
     }
 
     .menu-bar button,
@@ -182,17 +194,34 @@ button {
         border: 2px solid;
     }
 
+    .menu-bar {
+        padding: 5px 20px;
+    }
+
     .menu-bar img {
-        width: 40px;
+        width: 50px;
+    }
+
+    .memo .note p {
+        font-weight: bold;
     }
 
     .area .big-title .title-text {
         font-size: 15px;
+        font-weight: bold;
     }
 
     .memo .note,
     .memo #note {
-        font-size: 15px;
+        font-size: 8px;
+    }
+
+    .memo {
+        padding: 10px;
+    }
+
+    #go-home {
+        padding: 5px 10px;
     }
 
     #go-home p {
@@ -204,9 +233,14 @@ button {
         background-color: #f7bb01;
         transition: 0.5s ease;
     }
+
+    .qustion .prompt-message {
+        font-size: 10px;
+
+    }
 }
 
-@media (max-width:811px) {
+@media (max-width:944px) {
     a {
         display: block;
     }
