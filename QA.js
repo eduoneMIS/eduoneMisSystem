@@ -10,10 +10,10 @@ function problum_list() {
     const study123_softwareBTN = document.getElementById("study123-software");
     const power_BTN = document.getElementById("power-failure");
     // const emojis = ["o((>ω< ))o", "ᓚᘏᗢ", "(●'◡'●)", "╰(*°▽°*)╯", "ヾ(≧ ▽ ≦)ゝ", "(•ˋ _ ˊ•)"];
-    const emojis = ['😃', '😄✌️', '😊', '😎', '🙂', '🐱👀🫶', '😍', '💕😍👍', '🎶😎💖', '🦴🐕🤩', '😪', '👻', '🐋', '🐳'];
+    const emojis = ['😃😄😊', '😎', '🙂', '🐱👀😍', '😍', '👍', '🐕', '🐱', '🦴', '😪', '👻', '🐋', '🐳', '💕', '😍', '😎', '💖', '🤩', '🐕👀💕🦴', '👀', '🫶', '✌️'];
     const randomIndex = Math.floor(Math.random() * emojis.length);
     const randomEmoji = emojis[randomIndex];
-    note.textContent = randomEmoji;
+    note.textContent = `${randomEmoji}`;
     power_BTN.addEventListener("click", function (event) {
         event.preventDefault();
         power_cut();
@@ -39,7 +39,7 @@ function power_cut() {
     `;
     var power_restart = document.getElementById("power-restart");
     var ready_to_cut = document.getElementById("ready-to-cut");
-    note.innerHTML = `您當前的電力狀態<a href="https://nds.taipower.com.tw/ndsWeb/ndft112.aspx" target="_blank">台電停電查詢系統</a>`
+    note.innerHTML = `您當前的電力狀態 <a href="https://nds.taipower.com.tw/ndsWeb/ndft112.aspx" target="_blank">台電停電查詢系統</a>`
     power_restart.addEventListener("click", function (event) {
         event.preventDefault();
         all();
@@ -101,12 +101,12 @@ function study123_software() {
     big_title.innerHTML = `<i class='bx bx-log-in'></i>
     <h2 class="title-text">無法登入萬試通</h2>`;
     qustion.innerHTML = `
-    <button class="choose" id="all"><i class='bx bx-group'></i><p>全館</p></button>
-    <button class="choose" id="only"><i class='bx bx-user'></i><p>少數</p></button>
+    <button class="choose" id="all"><i class='bx bx-group'></i><p>全館電腦</p></button>
+    <button class="choose" id="only"><i class='bx bx-user'></i><p>少數幾台電腦</p></button>
     `;
     const all_BTN = document.getElementById("all");
     const only_BTN = document.getElementById("only");
-    note.innerHTML = `只有【少數】或【全館】無法登入`
+    note.innerHTML = `請告訴我您無法登入的狀態`
     all_BTN.addEventListener("click", function (event) {
         event.preventDefault();
         all();
@@ -121,10 +121,10 @@ function study123_software() {
 // 單一電腦
 function only() {
     big_title.innerHTML = `<i class='bx bx-user-circle' ></i>
-    <h2 class="title-text">帳密是否輸入正確</h2>`;
+    <h2 class="title-text">萬試通登入帳密是否輸入正確</h2>`;
     qustion.innerHTML = `
-    <button class="choose" id="done"><i class='bx bx-like'></i><p>我解決了</p></button>
-    <button class="choose" id="true"><i class='bx bx-check'></i><p>帳號沒錯</p></button>
+    <button class="choose" id="done"><i class='bx bx-like'></i><p>已得到解決</p></button>
+    <button class="choose" id="true"><i class='bx bx-error' ></i><p>仍無法解絕</p></button>
     `;
     const true_BTN = document.getElementById("true");
     var done_BTN = document.getElementById("done");
@@ -144,9 +144,9 @@ function all() {
     big_title.innerHTML = `<i class='bx bxl-docker'></i>
     <h2 class="title-text">NAS主機以及容器是否開啟</h2>`;
     qustion.innerHTML = `
-    <button class="choose" id="done"><i class='bx bx-like'></i><p>我解決了</p></button>
+    <button class="choose" id="done"><i class='bx bx-like'></i><p>已得到解決</p></button>
     <button class="choose" id="cant"><i class='bx bx-power-off'></i><p>無法開機</p></button>
-    <button class="choose" id="On"><i class='bx bx-check'></i><p>已開啟</p></button>
+    <button class="choose" id="On"><i class='bx bx-error' ></i><p>仍無法解絕</p></button>
     `;
     note.innerHTML = `請參考技術支援網站 <a href="https://hackmd.io/@eduone-imstudy-MIS/r1X0il1-n#%E7%8B%80%E6%B3%81%E4%BA%8C-NAS%E5%AE%B9%E5%99%A8%E6%B2%92%E6%9C%89%E9%96%8B-" target="_blank">怎麼開啟容器</a><a href="https://hackmd.io/@eduone-imstudy-MIS/r1X0il1-n#--%E9%96%8B%E6%A9%9F-%E6%93%8D%E4%BD%9C" target="_blank">NAS主機怎麼開機</a>`
     const on_BTN = document.getElementById("On");
@@ -173,8 +173,8 @@ function reset_software() {
     big_title.innerHTML = `<i class='bx bx-download'></i>
     <h2 class="title-text">重新安裝Study123檔案</h2>`;
     qustion.innerHTML = `
-    <button class="choose" id="done"><i class='bx bx-like'></i><p>已解決</p></button>
-    <button class="choose" id="reset"><i class='bx bx-check'></i><p>已重新安裝</p></button>
+    <button class="choose" id="done"><i class='bx bx-like'></i><p>已得到解決</p></button>
+    <button class="choose" id="reset"><i class='bx bx-error' ></i><p>仍無法解絕</p></button>
     `;
     var done_BTN = document.getElementById("done");
     const reset_BTN = document.getElementById("reset");
@@ -194,8 +194,8 @@ function configIP() {
     big_title.innerHTML = `<i class='bx bx-planet' ></i>
     <h2 class="title-text">修改config.txt為館內IP</h2>`
     qustion.innerHTML = `
-    <button class="choose" id="done"><i class='bx bx-like'></i><p>已解決</p></button>
-    <button class="choose" id="setted"><i class='bx bx-check'></i><p>已更換本館IP</p></button>
+    <button class="choose" id="done"><i class='bx bx-like'></i><p>已得到解決</p></button>
+    <button class="choose" id="setted"><i class='bx bx-error' ></i><p>仍無法解絕</p></button>
     `;
     var done_BTN = document.getElementById("done");
     const setted_BTN = document.getElementById("setted");
@@ -216,15 +216,15 @@ function configIP() {
 function fail() {
     big_title.innerHTML = `<i class='bx bxs-no-entry'></i>
     <h2 class="title-text">非常抱歉</h2>`;
-    qustion.innerHTML = `<p class="prompt-message">您的問題較為複雜，涉及到專業領域須由工程師為您解決</p>`;
+    qustion.innerHTML = `<p class="prompt-message">您的問題可能較為複雜，涉及到專業領域須由工程師為您解決</p>`;
     note.textContent = `請於【每周一至周五 9:30AM ~ 9:00PM】聯繫 - 金鑫資訊部`
 }
 // 已完成
 function done() {
     big_title.innerHTML = `<i class='bx bx-like'></i>
-    <h2 class="title-text">您已完成基本除錯</h2>`;
+    <h2 class="title-text">您已完成基本操作</h2>`;
     qustion.innerHTML = `<p class="prompt-message">恭喜您</p>`;
-    note.textContent = `感謝您使用資訊助手`
+    note.innerHTML = `如有其他疑問請點選 <a href="./index.html">返回主頁</a>`
 }
 
 
