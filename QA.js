@@ -227,9 +227,6 @@ function done() {
     note.innerHTML = `如有其他疑問請點選 <a href="./index.html">返回主頁</a>`
 }
 
-
-
-
 // -------- MENU --------
 const homeBTN = document.getElementById("go-home");
 // const backBTN = document.getElementById("go-back");
@@ -237,8 +234,3 @@ homeBTN.addEventListener("click", function (event) {
     event.preventDefault();
     location.reload();
 });
-
-// backBTN.addEventListener("click", function (event) {
-//     event.preventDefault();
-//     location.reload();
-// });
