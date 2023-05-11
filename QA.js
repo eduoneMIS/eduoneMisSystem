@@ -124,7 +124,7 @@ function only() {
     <h2 class="title-text">萬試通登入帳密是否輸入正確</h2>`;
     qustion.innerHTML = `
     <button class="choose" id="done"><i class='bx bx-like'></i><p>已得到解決</p></button>
-    <button class="choose" id="true"><i class='bx bx-error' ></i><p>仍無法解絕</p></button>
+    <button class="choose" id="true"><i class='bx bx-error' ></i><p>仍無法解決</p></button>
     `;
     const true_BTN = document.getElementById("true");
     var done_BTN = document.getElementById("done");
@@ -146,7 +146,7 @@ function all() {
     qustion.innerHTML = `
     <button class="choose" id="done"><i class='bx bx-like'></i><p>已得到解決</p></button>
     <button class="choose" id="cant"><i class='bx bx-power-off'></i><p>無法開機</p></button>
-    <button class="choose" id="On"><i class='bx bx-error' ></i><p>仍無法解絕</p></button>
+    <button class="choose" id="On"><i class='bx bx-error' ></i><p>仍無法解決</p></button>
     `;
     note.innerHTML = `請參考技術支援網站 <a href="https://hackmd.io/@eduone-imstudy-MIS/r1X0il1-n#%E7%8B%80%E6%B3%81%E4%BA%8C-NAS%E5%AE%B9%E5%99%A8%E6%B2%92%E6%9C%89%E9%96%8B-" target="_blank">怎麼開啟容器</a><a href="https://hackmd.io/@eduone-imstudy-MIS/r1X0il1-n#--%E9%96%8B%E6%A9%9F-%E6%93%8D%E4%BD%9C" target="_blank">NAS主機怎麼開機</a>`
     const on_BTN = document.getElementById("On");
@@ -159,7 +159,7 @@ function all() {
     });
     cant_BTN.addEventListener("click", function (event) {
         event.preventDefault();
-        fail();
+        cant();
     });
     done_BTN.addEventListener("click", function (event) {
         event.preventDefault();
@@ -174,7 +174,7 @@ function reset_software() {
     <h2 class="title-text">重新安裝Study123檔案</h2>`;
     qustion.innerHTML = `
     <button class="choose" id="done"><i class='bx bx-like'></i><p>已得到解決</p></button>
-    <button class="choose" id="reset"><i class='bx bx-error' ></i><p>仍無法解絕</p></button>
+    <button class="choose" id="reset"><i class='bx bx-error' ></i><p>仍無法解決</p></button>
     `;
     var done_BTN = document.getElementById("done");
     const reset_BTN = document.getElementById("reset");
@@ -195,7 +195,7 @@ function configIP() {
     <h2 class="title-text">修改config.txt為館內IP</h2>`
     qustion.innerHTML = `
     <button class="choose" id="done"><i class='bx bx-like'></i><p>已得到解決</p></button>
-    <button class="choose" id="setted"><i class='bx bx-error' ></i><p>仍無法解絕</p></button>
+    <button class="choose" id="setted"><i class='bx bx-error' ></i><p>仍無法解決</p></button>
     `;
     var done_BTN = document.getElementById("done");
     const setted_BTN = document.getElementById("setted");
@@ -225,6 +225,27 @@ function done() {
     <h2 class="title-text">您已完成基本操作</h2>`;
     qustion.innerHTML = `<p class="prompt-message">恭喜您</p>`;
     note.innerHTML = `如有其他疑問請點選 <a href="./index.html">返回主頁</a>`
+}
+
+function cant() {
+    big_title.innerHTML = `<i class='bx bxs-plug'></i>
+    <h2 class="title-text">檢查NAS電源線是否已插妥</h2>`
+    qustion.innerHTML = `
+    <button class="choose" id="done"><i class='bx bx-like'></i><p>已得到解決</p></button>
+    <button class="choose" id="cant"><i class='bx bx-error' ></i><p>仍無法解決</p></button>
+    `;
+    var done_BTN = document.getElementById("done");
+    const cant_BTN = document.getElementById("cant");
+    note.innerHTML = `請參考技術支援網站 <a href="https://hackmd.io/@eduone-imstudy-MIS/r1X0il1-n#--%E9%96%8B%E6%A9%9F-%E6%93%8D%E4%BD%9C" target="_blank">NAS主機怎麼開機</a>`
+
+    done_BTN.addEventListener("click", function (event) {
+        event.preventDefault();
+        done();
+    });
+    cant_BTN.addEventListener("click", function (event) {
+        event.preventDefault();
+        fail();
+    });
 }
 
 // -------- MENU --------
