@@ -10,7 +10,7 @@ function problum_list() {
     const study123_softwareBTN = document.getElementById("study123-software");
     const power_BTN = document.getElementById("power-failure");
     // const emojis = ["o((>ω< ))o", "ᓚᘏᗢ", "(●'◡'●)", "╰(*°▽°*)╯", "ヾ(≧ ▽ ≦)ゝ", "(•ˋ _ ˊ•)"];
-    const emojis = ['😃😄😊', '😎', '🙂', '🐱👀😍', '😍', '👍', '🐕', '🐱', '🦴', '😪', '👻', '🐋', '🐳', '💕', '😍', '😎', '💖', '🤩', '🐕👀💕🦴', '👀',  '✌️'];
+    const emojis = ['😃😄😊', '😎', '🙂', '🐱👀😍', '😍', '👍', '🐕', '🐱', '🦴', '😪', '👻', '🐋', '🐳', '💕', '😍', '😎', '💖', '🤩', '🐕👀💕🦴', '👀', '✌️'];
     const randomIndex = Math.floor(Math.random() * emojis.length);
     const randomEmoji = emojis[randomIndex];
     note.textContent = `${randomEmoji}`;
@@ -50,6 +50,7 @@ function power_cut() {
     });
 }
 
+// 關閉容器
 function power_readToCut() {
     big_title.innerHTML = `<i class='bx bxl-docker' ></i>
     <h2 class="title-text">請將容器關閉</h2>`;
@@ -70,6 +71,7 @@ function power_readToCut() {
     });
 }
 
+// 將NAS關機
 function shoutDownNas() {
     big_title.innerHTML = `<i class='bx bx-power-off'></i>
     <h2 class="title-text">請長按NAS主機電源鍵進行關機</h2>`;
@@ -190,6 +192,7 @@ function reset_software() {
     });
 }
 
+// 修改config.txt的IP
 function configIP() {
     big_title.innerHTML = `<i class='bx bx-planet' ></i>
     <h2 class="title-text">修改config.txt為館內IP</h2>`
@@ -213,6 +216,7 @@ function configIP() {
 
 
 
+// 無法自行解決問題
 function fail() {
     big_title.innerHTML = `<i class='bx bxs-no-entry'></i>
     <h2 class="title-text">非常抱歉</h2>`;
@@ -227,6 +231,7 @@ function done() {
     note.innerHTML = `如有其他疑問請點選 <a href="./index.html">返回主頁</a>`
 }
 
+// NAS無法正常開機
 function cant() {
     big_title.innerHTML = `<i class='bx bxs-plug'></i>
     <h2 class="title-text">檢查NAS電源線是否已插妥</h2>`
@@ -247,6 +252,7 @@ function cant() {
         fail();
     });
 }
+
 
 // -------- MENU --------
 const homeBTN = document.getElementById("go-home");
