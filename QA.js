@@ -10,7 +10,7 @@ function problum_list() {
     const study123_softwareBTN = document.getElementById("study123-software");
     const power_BTN = document.getElementById("power-failure");
     // const emojis = ["o((>ω< ))o", "ᓚᘏᗢ", "(●'◡'●)", "╰(*°▽°*)╯", "ヾ(≧ ▽ ≦)ゝ", "(•ˋ _ ˊ•)"];
-    const emojis = ['😃😄😊', '😎', '🙂', '🐱👀😍', '😍', '👍', '🐕', '🐱', '🦴', '😪', '👻', '🐋', '🐳', '💕', '😍', '😎', '💖', '🤩', '🐕👀💕🦴', '👀', '🫶', '✌️'];
+    const emojis = ['😃😄😊', '😎', '🙂', '🐱👀😍', '😍', '👍', '🐕', '🐱', '🦴', '😪', '👻', '🐋', '🐳', '💕', '😍', '😎', '💖', '🤩', '🐕👀💕🦴', '👀',  '✌️'];
     const randomIndex = Math.floor(Math.random() * emojis.length);
     const randomEmoji = emojis[randomIndex];
     note.textContent = `${randomEmoji}`;
