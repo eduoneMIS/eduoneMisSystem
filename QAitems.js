@@ -196,6 +196,7 @@ function reset_software() {
 function configIP() {
     big_title.innerHTML = `<i class='bx bx-planet' ></i>
     <h2 class="title-text">修改config.txt為館內IP</h2>`
+    var newDiv = document.createElement('input');
     qustion.innerHTML = `
     <button class="choose" id="done"><i class='bx bx-like'></i><p>已得到解決</p></button>
     <button class="choose" id="setted"><i class='bx bx-error' ></i><p>仍無法解決</p></button>
@@ -203,6 +204,7 @@ function configIP() {
     var done_BTN = document.getElementById("done");
     const setted_BTN = document.getElementById("setted");
     note.innerHTML = `請參考技術支援網站 <a href="https://hackmd.io/@eduone-imstudy-MIS/HJRLit5ns#%E5%88%9D%E5%A7%8B%E8%A8%AD%E5%AE%9A-configtxt---IP" target="_blank">如何修改config.txt IP</a>`
+
 
     done_BTN.addEventListener("click", function (event) {
         event.preventDefault();
