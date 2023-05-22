@@ -125,7 +125,7 @@ function only() {
     big_title.innerHTML = `<i class='bx bx-user-circle' ></i>
     <h2 class="title-text">萬試通登入帳密是否輸入正確</h2>`;
     qustion.innerHTML = `
-    <button class="choose" id="done"><i class='bx bx-like'></i><p>已經可正常登入</p></button>
+    <button class="choose" id="done"><i class='bx bx-like'></i><p>已正常登入</p></button>
     <button class="choose" id="true"><i class='bx bx-error' ></i><p>仍無法登入</p></button>
     `;
     const true_BTN = document.getElementById("true");
@@ -146,7 +146,7 @@ function all() {
     big_title.innerHTML = `<i class='bx bxl-docker'></i>
     <h2 class="title-text">NAS主機以及容器是否開啟</h2>`;
     qustion.innerHTML = `
-    <button class="choose" id="done"><i class='bx bx-like'></i><p>已經可正常登入</p></button>
+    <button class="choose" id="done"><i class='bx bx-like'></i><p>已正常登入</p></button>
     <button class="choose" id="cant"><i class='bx bx-power-off'></i><p>無法開機</p></button>
     <button class="choose" id="On"><i class='bx bx-error' ></i><p>仍無法登入</p></button>
     `;
@@ -175,7 +175,7 @@ function reset_software() {
     big_title.innerHTML = `<i class='bx bx-download'></i>
     <h2 class="title-text">重新安裝Study123檔案</h2>`;
     qustion.innerHTML = `
-    <button class="choose" id="done"><i class='bx bx-like'></i><p>已經可正常登入</p></button>
+    <button class="choose" id="done"><i class='bx bx-like'></i><p>已正常登入</p></button>
     <button class="choose" id="reset"><i class='bx bx-error' ></i><p>仍無法登入</p></button>
     `;
     var done_BTN = document.getElementById("done");
@@ -198,7 +198,7 @@ function configIP() {
     <h2 class="title-text">修改config.txt為館內IP</h2>`
     var newDiv = document.createElement('input');
     qustion.innerHTML = `
-    <button class="choose" id="done"><i class='bx bx-like'></i><p>已經可正常登入</p></button>
+    <button class="choose" id="done"><i class='bx bx-like'></i><p>已正常登入</p></button>
     <button class="choose" id="setted"><i class='bx bx-error' ></i><p>仍無法登入</p></button>
     `;
     var done_BTN = document.getElementById("done");
@@ -238,7 +238,7 @@ function cant() {
     big_title.innerHTML = `<i class='bx bxs-plug'></i>
     <h2 class="title-text">檢查NAS電源線是否已插妥並確認容器已開啟</h2>`
     qustion.innerHTML = `
-    <button class="choose" id="done"><i class='bx bx-like'></i><p>已經可正常登入</p></button>
+    <button class="choose" id="done"><i class='bx bx-like'></i><p>已正常登入</p></button>
     <button class="choose" id="cant"><i class='bx bx-error' ></i><p>仍無法登入</p></button>
     `;
     var done_BTN = document.getElementById("done");
