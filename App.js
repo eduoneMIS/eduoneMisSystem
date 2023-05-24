@@ -23,12 +23,6 @@ function problum_list() {
         study123_software();
     });
 }
-
-
-
-
-
-
 // power問題
 function power_cut() {
     big_title.innerHTML = `<i class='bx bxs-traffic-barrier'></i>
@@ -49,7 +43,6 @@ function power_cut() {
         power_readToCut();
     });
 }
-
 // 關閉容器
 function power_readToCut() {
     big_title.innerHTML = `<i class='bx bxl-docker' ></i>
