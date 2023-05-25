@@ -110,7 +110,7 @@ body {
     line-height: 30px;
     background-color: #0f4c81;
     margin: 20px 10px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
     color: aliceblue;
 }
 
@@ -183,7 +183,7 @@ footer .company-footer {
     font-size: 12px;
     text-align: center;
     align-items: center;
-    margin: 20px auto 0 auto;
+    margin: 10px auto 0 auto;
 }
 
 @media (max-width:812px) {
@@ -215,7 +215,7 @@ footer .company-footer {
 
     .memo {
         padding: 12px;
-        margin: 20px 3px;
+        margin: 20px 3px 0 3px;
     }
 
     #go-home {
