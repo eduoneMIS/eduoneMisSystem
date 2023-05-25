@@ -118,6 +118,7 @@ body {
     color: #f7bb01;
     font-size: 20px;
     font-weight: bold;
+    padding: 10px;
 }
 
 .memo .note a {

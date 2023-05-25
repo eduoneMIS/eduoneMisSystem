@@ -1,6 +1,6 @@
 var big_title = document.getElementsByClassName("big-title")[0];
 var qustion = document.getElementsByClassName("qustion")[0];
-var note = document.getElementById("note");
+var memo = document.getElementsByClassName("memo")[0];
 
 // 開始資訊助理
 problum_list();
@@ -10,10 +10,13 @@ function problum_list() {
     const study123_softwareBTN = document.getElementById("study123-software");
     const power_BTN = document.getElementById("power-failure");
     // const emojis = ["o((>ω< ))o", "ᓚᘏᗢ", "(●'◡'●)", "╰(*°▽°*)╯", "ヾ(≧ ▽ ≦)ゝ", "(•ˋ _ ˊ•)"];
-    const emojis = ['😃😄😊', '😎', '🙂', '🐱👀😍', '😍', '👍', '🐕', '🐱', '🦴', '😪', '👻', '🐋', '🐳', '💕', '😍', '😎', '💖', '🤩', '🐕👀💕🦴', '👀', '✌️'];
-    const randomIndex = Math.floor(Math.random() * emojis.length);
-    const randomEmoji = emojis[randomIndex];
-    note.textContent = `${randomEmoji}`;
+    // const emojis = ['😃😄😊', '😎', '🙂', '🐱👀😍', '😍', '👍', '🐕', '🐱', '🦴', '😪', '👻', '🐋', '🐳', '💕', '😍', '😎', '💖', '🤩', '🐕👀💕🦴', '👀', '✌️'];
+    // const randomIndex = Math.floor(Math.random() * emojis.length);
+    // const randomEmoji = emojis[randomIndex];
+    memo.innerHTML = '<p class="note"><span id="note"></span><span id="emoji"></span></p>';
+    // var emoji = document.getElementById("emoji");
+    // emoji.textContent = `${randomEmoji}`;
+    note.innerHTML = `您也可以直接參考 <a href="https://hackmd.io/@eduone-imstudy-MIS/rJHyKhJ6s" target="_blank">技術支援圖文教學版</a>`
     power_BTN.addEventListener("click", function (event) {
         event.preventDefault();
         power_cut();
@@ -33,6 +36,8 @@ function power_cut() {
     `;
     var power_restart = document.getElementById("power-restart");
     var ready_to_cut = document.getElementById("ready-to-cut");
+    memo.innerHTML = '<p class="note"><span id="note"></span></p>';
+    var note = document.getElementById("note");
     note.innerHTML = `您當前的電力狀態 <a href="https://nds.taipower.com.tw/ndsWeb/ndft112.aspx" target="_blank">台電停電查詢系統</a>`
     power_restart.addEventListener("click", function (event) {
         event.preventDefault();
@@ -101,6 +106,8 @@ function study123_software() {
     `;
     const all_BTN = document.getElementById("all");
     const only_BTN = document.getElementById("only");
+    memo.innerHTML = '<p class="note"><span id="note"></span></p>';
+    var note = document.getElementById("note");
     note.innerHTML = `請告訴我您無法登入的狀態`
     all_BTN.addEventListener("click", function (event) {
         event.preventDefault();
