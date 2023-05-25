@@ -178,7 +178,13 @@ button {
     font-size: 20px;
 }
 
-
+footer .company-footer {
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    margin: 20px auto 0 auto;
+}
 
 @media (max-width:812px) {
 

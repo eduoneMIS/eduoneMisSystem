@@ -108,7 +108,7 @@ function study123_software() {
     const only_BTN = document.getElementById("only");
     memo.innerHTML = '<p class="note"><span id="note"></span></p>';
     var note = document.getElementById("note");
-    note.innerHTML = `請告訴我您無法登入的狀態`
+    note.innerHTML = `請告訴我您無法登入的程度`
     all_BTN.addEventListener("click", function (event) {
         event.preventDefault();
         all();
