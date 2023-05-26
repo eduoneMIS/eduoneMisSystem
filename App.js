@@ -91,11 +91,6 @@ function shoutDownNas() {
 }
 
 
-
-
-
-
-
 // 萬試通無法開啟 問題
 function study123_software() {
     big_title.innerHTML = `<i class='bx bx-log-in'></i>

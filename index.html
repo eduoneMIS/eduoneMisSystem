@@ -20,16 +20,22 @@
 </head>
 
 <body>
+
     <!-- menu title -->
     <div class="group-box">
         <div class="menu-bar">
             <img src="./img/im_logo_ transparent.png">
-            <button id="go-home">
-                <i class='bx bx-home-alt'></i>
-                <p>返回主頁</p>
-            </button>
+            <div class="buttonArea">
+                <button id="go-news">
+                    <i class='bx bx-news'></i>
+                    <p>近期更新</p>
+                </button>
+                <button id="go-home">
+                    <i class='bx bx-home-alt'></i>
+                    <p>返回主頁</p>
+                </button>
+            </div>
         </div>
-
         <!-- 問題欄位 -->
         <div class="area">
             <!-- 主要詢問的問題 -->
@@ -54,8 +60,43 @@
             <p class="company-footer">Copyright © 2023 EduOne Co.Ltd. All Rights Reserved</p>
         </footer>
     </div>
-</body>
 
+    <!-- 平常隱藏的更新彈窗 -->
+    <div id="newsItems" class="newsItems">
+        <div class="newsContent">
+            <div class="titleBar">
+                <i class='bx bx-left-arrow-alt' id="newsContent-close"></i>
+                <span class="titleText">
+                    <h2>學習王近期更新內容</h2>
+                </span>
+            </div>
+            <div class="contentItems" id="content-insert">
+                <div class="update-dateTime">發布日 : <span id="update-time-Text">2023.05.26</span></div>
+                <div class="items">
+                    <h3>萬試通軟體 -</h3>
+                    <ul>
+                        <li>近期無更新</li>
+                    </ul>
+                </div>
+
+                <div class="items">
+                    <h3>補教系統 -</h3>
+                    <ul>
+                        <li>近期無更新</li>
+                    </ul>
+                </div>
+
+                <div class="items">
+                    <h3>其他 -</h3>
+                    <ul>
+                        <li>近期無更新</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 <script src="./App.js"></script>
+<script src="./news.js"></script>
 
 </html>
