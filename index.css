@@ -122,7 +122,7 @@ body {
 }
 
 .memo .note a {
-    margin-bottom: 10px;
+    margin: 10px auto;
 }
 
 .memo .note a:active {
@@ -180,7 +180,6 @@ button {
 
 footer .company-footer {
     color: gray;
-    font-size: 12px;
     text-align: center;
     align-items: center;
     margin: 10px auto 0 auto;
@@ -232,6 +231,10 @@ footer .company-footer {
 
     .qustion .prompt-message {
         font-size: 15px;
+    }
+
+    footer .company-footer {
+        font-size: 12px;
     }
 }
 
