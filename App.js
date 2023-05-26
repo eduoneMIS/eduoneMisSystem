@@ -257,8 +257,8 @@ function configIP() {
 function fail() {
     big_title.innerHTML = `<i class='bx bxs-no-entry'></i>
     <h2 class="title-text">非常抱歉</h2>`;
-    qustion.innerHTML = `<p class="prompt-message">您的問題可能較為複雜，涉及到專業領域須由工程師為您解決</p>`;
-    note.textContent = `請於【每周一至周五 9:30AM ~ 9:00PM】聯繫 - 金鑫資訊部`
+    qustion.innerHTML = `<p class="prompt-message">您的問題可能較為複雜，涉及專業領域須由工程師處理</p>`;
+    note.textContent = `請於工作日的9:30至21:00，聯繫金鑫資訊部`
 }
 
 // 已完成

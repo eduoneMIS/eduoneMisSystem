@@ -187,7 +187,6 @@ footer .company-footer {
 
 @media (max-width:812px) {
 
-
     .menu-bar button,
     .qustion button {
         border: 2px solid;
@@ -236,6 +235,7 @@ footer .company-footer {
     footer .company-footer {
         font-size: 12px;
     }
+
 }
 
 @media (max-width:944px) {
