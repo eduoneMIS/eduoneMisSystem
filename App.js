@@ -17,7 +17,7 @@ function problum_list() {
     '<p class="note"><span id="note"></span><span id="emoji"></span></p>';
   // var emoji = document.getElementById("emoji");
   // emoji.textContent = `${randomEmoji}`;
-  note.innerHTML = `您也可以直接參考 <a href="https://hackmd.io/@eduone-imstudy-MIS/rJHyKhJ6s" target="_blank">金鑫教育愛學館技術支援網站</a>`;
+  note.innerHTML = `若您了解流程可直接找尋相關教學 <a href="https://hackmd.io/@eduone-imstudy-MIS/rJHyKhJ6s" target="_blank">官方技術支援網站</a>`;
   power_BTN.addEventListener("click", function (event) {
     event.preventDefault();
     power_cut();
