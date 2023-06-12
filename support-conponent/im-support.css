@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300&family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.title-bar {
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.title-bar .page-title {
+  color: aliceblue;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  text-align: center;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  align-items: center;
+  transition: 0.05s ease-in-out;
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f4c81;
+}
+
+.title-bar {
+  display: flex;
+  padding: 10px;
+}
+
+.conponent {
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px;
+  box-shadow: 0px 0px 50px -10px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  color: #0f4c81;
+  font-weight: bold;
+  margin: 10px 15px;
+  font-size: 25px;
+}
+
+.ntroduce {
+  font-size: 18px;
+  color: #526d82;
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.item-card {
+  font-weight: bold;
+  margin: 10px;
+  border-radius: 15px;
+  border: 3px solid#0f4c81;
+  background-color: aliceblue;
+  color: #0f4c81;
+  cursor: pointer;
+  padding: 1.5rem;
+  flex-direction: column;
+  flex: auto;
+  overflow: hidden;
+  align-items: center;
+}
+
+.item-card i {
+  font-size: 25px;
+}
+
+i {
+  margin-right: 10px;
+}
+
+.item-card:hover {
+  background-color: #f7bb01;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+#no-link {
+  cursor: auto;
+}
+
+#no-link:hover {
+  cursor: auto;
+  background-color: aliceblue;
+}
+
+.footer-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  background-color: #0f4c81;
+  padding: 10px 10px;
+}
+
+.footer-bar a {
+  font-size: 20px;
+  color: #0f4c81;
+  text-align: center;
+  background-color: aliceblue;
+  border-radius: 15px;
+  padding: 10px;
+  margin: auto 10px;
+  font-weight: bold;
+}
+
+.footer-bar a:hover {
+  background-color: #f7bb01;
+}
