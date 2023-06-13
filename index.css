@@ -6,6 +6,8 @@
     list-style: none;
     font-family: 'Noto Sans TC', sans-serif;
     font-family: 'Open Sans', sans-serif;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 h1,
