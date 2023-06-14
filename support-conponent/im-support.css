@@ -12,10 +12,15 @@
 }
 
 .title-bar {
-
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0f4c81;
+  z-index: 9999;
 }
 
 .title-bar .page-title {
@@ -40,6 +45,7 @@ body {
 }
 
 body {
+  margin-top: 100px;
   display: block;
   justify-content: center;
   align-items: center;
@@ -48,7 +54,6 @@ body {
 
 .title-bar {
   display: flex;
-  padding: 10px;
 }
 
 .conponent {
@@ -142,11 +147,28 @@ i {
 }
 
 @media (max-width: 685px) {
+  body {
+    margin-top: 150px;
+  }
+
   .footer-bar {
     width: 100%;
   }
 
   .footer-bar a {
     flex: 1;
+    font-size: 18px;
+  }
+
+  .title-bar {
+    padding: 10px auto;
+  }
+
+  .title-bar .page-title {
+    margin: 10px auto;
+  }
+
+  .conponent {
+    margin: 0 20px 20px 20px;
   }
 }
