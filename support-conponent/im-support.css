@@ -12,6 +12,7 @@
 }
 
 .title-bar {
+
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -138,4 +139,14 @@ i {
 
 .footer-bar a:hover {
   background-color: #f7bb01;
+}
+
+@media (max-width: 685px) {
+  .footer-bar {
+    width: 100%;
+  }
+
+  .footer-bar a {
+    flex: 1;
+  }
 }
