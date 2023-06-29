@@ -17,7 +17,7 @@ function problum_list() {
     '<p class="note"><span id="note"></span><span id="emoji"></span></p>';
   // var emoji = document.getElementById("emoji");
   // emoji.textContent = `${randomEmoji}`;
-  note.innerHTML = `若您已了解步驟可更快速除錯 <a href="https://hackmd.io/@eduone-imstudy-MIS/rJHyKhJ6s" target="_blank">官方技術支援網站</a>`;
+  note.innerHTML = `若您已了解步驟可更快速除錯 <a href="./support-conponent/im-support.html" target="_blank">官方技術支援網站</a>`;
   power_BTN.addEventListener("click", function (event) {
     event.preventDefault();
     power_cut();
@@ -27,6 +27,7 @@ function problum_list() {
     study123_software();
   });
 }
+
 // power問題
 function power_cut() {
   big_title.innerHTML = `<i class='bx bxs-traffic-barrier'></i>
@@ -49,6 +50,7 @@ function power_cut() {
     power_readToCut();
   });
 }
+
 // 關閉容器
 function power_readToCut() {
   big_title.innerHTML = `<i class='bx bxl-docker' ></i>
@@ -59,7 +61,7 @@ function power_readToCut() {
     `;
   var power_restart = document.getElementById("power-restart");
   var docker_off_faild = document.getElementById("docker-off-faild");
-  note.innerHTML = `技術支援網站指引 <a href="https://hackmd.io/@eduone-imstudy-MIS/r1X0il1-n#%E7%8B%80%E6%B3%81%E4%BA%8C-NAS%E5%AE%B9%E5%99%A8%E6%B2%92%E6%9C%89%E9%96%8B-" target="_blank">NAS容器如何關閉</a>`;
+  note.innerHTML = `技術支援網站指引 <a href="./support-conponent/study123.html#overlist01" target="_blank">NAS容器如何關閉</a>`;
   power_restart.addEventListener("click", function (event) {
     event.preventDefault();
     shoutDownNas();
@@ -80,7 +82,7 @@ function shoutDownNas() {
     `;
   var power_off = document.getElementById("power-off");
   var shout_down_faild = document.getElementById("shout-down-faild");
-  note.innerHTML = `技術支援網站指引 <a href="https://hackmd.io/@eduone-imstudy-MIS/r1X0il1-n#--%E9%97%9C%E6%A9%9F-%E6%93%8D%E4%BD%9C" target="_blank">如何關機</a>`;
+  note.innerHTML = `技術支援網站指引 <a href="./support-conponent/study123.html#overlist01" target="_blank">如何關機</a>`;
   shout_down_faild.addEventListener("click", function (event) {
     event.preventDefault();
     fail();
@@ -124,7 +126,7 @@ function only() {
     `;
   const true_BTN = document.getElementById("true");
   var done_BTN = document.getElementById("done");
-  note.innerHTML = `技術支援網站指引 <a href="https://hackmd.io/@eduone-imstudy-MIS/ryyBe7Zpi#%E5%A6%82%E4%BD%95%E7%A2%BA%E8%AA%8D%E5%AD%B8%E7%94%9F%E7%9A%84%E5%B8%B3%E8%99%9F%E5%AF%86%E7%A2%BC-%E4%BE%8B%E5%A6%82-%E5%BF%98%E8%A8%98%E5%AD%B8%E7%94%9F%E5%B8%B3%E5%AF%86" target="_blank">如何確認學生的帳號密碼?</a>`;
+  note.innerHTML = `技術支援網站指引 <a href="./support-conponent/study123.html#step5" target="_blank">如何確認學生的帳號密碼?</a>`;
   done_BTN.addEventListener("click", function (event) {
     event.preventDefault();
     done();
@@ -144,7 +146,7 @@ function all() {
     <button class="choose" id="cantTurnOn"><i class='bx bx-power-off'></i><p>無法開機</p></button>
     <button class="choose" id="on"><i class='bx bx-error' ></i><p>無法登入</p></button>
     `;
-  note.innerHTML = `技術支援網站指引 <a href="https://hackmd.io/@eduone-imstudy-MIS/r1X0il1-n#%E7%8B%80%E6%B3%81%E4%B8%80-NAS%E4%B8%BB%E6%A9%9F%E6%B2%92%E6%9C%89%E9%96%8B%E6%A9%9F-" target="_blank">NAS主機怎麼開機</a>`;
+  note.innerHTML = `技術支援網站指引 <a href="./support-conponent/study123.html#step2" target="_blank">NAS主機怎麼開機</a>`;
 
   const on_BTN = document.getElementById("on");
   const cantTurnOn_BTN = document.getElementById("cantTurnOn");
@@ -174,7 +176,7 @@ function cant() {
     `;
   var done_BTN = document.getElementById("done");
   const cant_BTN = document.getElementById("cant");
-  note.innerHTML = `技術支援網站指引 <a href="https://hackmd.io/@eduone-imstudy-MIS/r1X0il1-n#%E7%8B%80%E6%B3%81%E4%B8%80-NAS%E4%B8%BB%E6%A9%9F%E6%B2%92%E6%9C%89%E9%96%8B%E6%A9%9F-" target="_blank">NAS主機怎麼開機</a><a href="https://nds.taipower.com.tw/ndsWeb/ndft112.aspx" target="_blank">台電停電查詢系統</a>`;
+  note.innerHTML = `技術支援網站指引 <a href="./support-conponent/study123.html#step1" target="_blank">NAS主機怎麼開機</a><a href="https://nds.taipower.com.tw/ndsWeb/ndft112.aspx" target="_blank">台電停電查詢系統</a>`;
 
   done_BTN.addEventListener("click", function (event) {
     event.preventDefault();
@@ -194,7 +196,7 @@ function docker_on() {
     <button class="choose" id="cantTurnOn-docker"><i class='bx bx-toggle-left' ></i><p>無法開啟</p></button>
     <button class="choose" id="on-docekr"><i class='bx bx-error' ></i><p>仍無法登入</p></button>
     `;
-  note.innerHTML = `技術支援網站指引 <a href="https://hackmd.io/@eduone-imstudy-MIS/r1X0il1-n#%E7%8B%80%E6%B3%81%E4%BA%8C-NAS%E5%AE%B9%E5%99%A8%E6%B2%92%E6%9C%89%E9%96%8B-" target="_blank">怎麼開啟容器</a>`;
+  note.innerHTML = `技術支援網站指引 <a href="./support-conponent/study123.html#step3" target="_blank">怎麼開啟容器</a>`;
   const dockerOn_BTN = document.getElementById("on-docekr");
   const cantTurnOn_docker_BTN = document.getElementById("cantTurnOn-docker");
   const done_BTN = document.getElementById("done");
@@ -222,7 +224,7 @@ function reset_software() {
     `;
   var done_BTN = document.getElementById("done");
   const reset_BTN = document.getElementById("reset");
-  note.innerHTML = `技術支援網站指引 <a href="https://hackmd.io/@eduone-imstudy-MIS/HJRLit5ns" target="_blank">如何重新安裝Study123</a>`;
+  note.innerHTML = `技術支援網站指引 <a href="./support-conponent/study123.html#step4" target="_blank">如何重新安裝Study123</a>`;
 
   done_BTN.addEventListener("click", function (event) {
     event.preventDefault();
@@ -245,7 +247,7 @@ function configIP() {
     `;
   var done_BTN = document.getElementById("done");
   const setted_BTN = document.getElementById("setted");
-  note.innerHTML = `技術支援網站指引 <a href="https://hackmd.io/@eduone-imstudy-MIS/HJRLit5ns#%E5%88%9D%E5%A7%8B%E8%A8%AD%E5%AE%9A-configtxt---IP" target="_blank">如何修改config.txt IP</a>`;
+  note.innerHTML = `技術支援網站指引 <a href="./support-conponent/study123.html#step4" target="_blank">如何修改config.txt IP</a>`;
 
   done_BTN.addEventListener("click", function (event) {
     event.preventDefault();

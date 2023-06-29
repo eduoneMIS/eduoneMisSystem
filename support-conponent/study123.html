@@ -53,7 +53,7 @@
     <div class="nextStep"><i class='bx bx-chevrons-down'></i></i></div>
 
     <div class="conponent" id="step3">
-        <div class="title">Step 3 確認您館內的NAS IP</span></div>
+        <div class="title">Step 3 查詢IP & 容器開關</span></div>
         <div class="ntroduce">請先下載 " IP找尋助手 "<a class="ntroduce-link"
                 href="https://global.synologydownload.com/download/Utility/Assistant/7.0.3-50049/Windows/synology-assistant-7.0.3-50049.exe?model=DS220%2B&bays=2&dsm_version=7.1.1&build_number=42962"
                 target="_blank">IP找尋助手 ( Synology Assistant_檔案大小: 10.2MB ) 下載</a></div>
@@ -141,6 +141,37 @@
                 2. 找到您需要登入的帳號，例如編號50號<br>
                 3. 點選該帳號欄位右側的「編輯資訊」進入編輯頁面<br>
                 4. 「行動電話」欄位則代表該帳號的密碼
+            </p>
+        </div>
+    </div>
+    <div class="nextStep"><i class='bx bx-chevrons-down'></i></i></div>
+
+    <div class="conponent" id="overlist01">
+        <div class="title">其他: 遇到停電需要關機</span></div>
+        <div class="ntroduce">避免資料庫中途因斷電導致損毀</div>
+        <div class="ntroduce">請先下載 " IP找尋助手 "<a class="ntroduce-link"
+                href="https://global.synologydownload.com/download/Utility/Assistant/7.0.3-50049/Windows/synology-assistant-7.0.3-50049.exe?model=DS220%2B&bays=2&dsm_version=7.1.1&build_number=42962"
+                target="_blank">IP找尋助手 ( Synology Assistant_檔案大小: 10.2MB ) 下載</a></div>
+        <div class="imgItems">
+            <p class="img-item"><a href="https://youtu.be/aqv1bY7lNnI" target="_blank" class="webp-Youtube-Link"><img
+                        src="./conponent/IP搜尋.webp"></a>
+                <span class="title">使用Assistant找尋您的IP</span>
+                1. 打開Synology Assistant<br>
+                2. 搜尋找到NAS主機名稱為「Study123」的NAS IP
+            </p>
+            <p class="img-item"><a href="https://youtu.be/sFu5Ga1GgTY" target="_blank" class="webp-Youtube-Link"><img
+                        src="./conponent/開啟容器.webp"></a>
+                <span class="title">關閉NAS管理系統中的容器</span>
+                1. 將您的NAS IP輸入到瀏覽器中<br>
+                2. 登入NAS控制頁面(帳號密碼若忘記請與資訊部索取)<br>
+                3. 進入docker>容器>關閉名為hls-ubuntu容器<br>
+                4. 確保名為hls-ubuntu容器開關呈現灰色
+            </p>
+            <p class="img-item"><img src="./conponent/關機.webp">
+                <span class="title">關機</span>
+                1. 請確認您已經關閉容器<br>
+                2. 長按電源鍵大約10~15秒左右直至燈號熄滅<br>
+                3. 確認所有燈號皆已熄滅
             </p>
         </div>
     </div>
