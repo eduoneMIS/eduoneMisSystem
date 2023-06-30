@@ -99,8 +99,8 @@ body {
     margin: auto;
 }
 
-.choose:active,
-.menu-bar button:active {
+.choose:hover,
+.menu-bar button:hover {
     background-color: #f7bb01;
     transition: 0.05s ease-in-out;
     box-shadow: 0px 0px 50px -10px rgba(0, 0, 0, 0.5);
@@ -127,7 +127,7 @@ body {
     margin: 10px 5px;
 }
 
-.memo .note a:active {
+.memo .note a:hover {
     background-color: #0f4c81;
     transition: 0.05s ease-in-out;
     color: #f7bb01;
@@ -258,7 +258,7 @@ footer .company-footer {
     cursor: pointer;
 }
 
-.newsItems i:active {
+.newsItems i:hover {
     background-color: #f7bb01;
     border-radius: 5px;
     color: #0f4c81;
