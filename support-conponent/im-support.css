@@ -196,6 +196,10 @@ i {
     flex: 1;
   }
 
+  .footer-bar a i {
+    display: none;
+  }
+
   .conponent {
     margin: 0 20px 20px 20px;
   }
