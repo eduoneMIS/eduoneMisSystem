@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
   font-family: "Noto Sans TC", sans-serif;
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
@@ -164,6 +163,15 @@ body {
   font-weight: 500;
 }
 
+ol {
+  margin: auto;
+}
+
+ol li {
+  margin: 10px 20px;
+  color: #0f4c81;
+}
+
 .info:hover {
   background-color: #526d82;
 }
@@ -173,7 +181,19 @@ body {
 }
 
 @media (max-width: 660px) {
+  .title-bar .page-title {
+    text-align: left;
+  }
+
   .img-item img {
     width: 220px;
+  }
+
+  .title {
+    font-size: 23px;
+  }
+
+  .ntroduce-link {
+    font-size: 15px;
   }
 }
