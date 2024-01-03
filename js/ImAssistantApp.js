@@ -11,7 +11,7 @@ function problum_list() {
   const powerBtn = document.getElementById("power-failure");
   memo.innerHTML =
     '<p class="note"><span id="note"></span><span id="emoji"></span></p>';
-  note.innerHTML = `若您已了解步驟可更快速除錯 <a href="./im-support.html" target="_blank">官方技術支援網站</a>`;
+  note.innerHTML = `若您已了解步驟可更快速除錯 <a href="./index.html" target="_blank">官方技術支援網站</a>`;
   powerBtn.addEventListener("click", function (event) {
     event.preventDefault();
     power_cut();
@@ -55,7 +55,7 @@ function power_readToCut() {
     `;
   var nasPowerRestart = document.getElementById("power-restart");
   var nasDockerOffFaild = document.getElementById("docker-off-faild");
-  note.innerHTML = `技術支援網站指引 <a href="./study123.html#overlist01" target="_blank">NAS容器如何關閉</a>`;
+  note.innerHTML = `技術支援網站指引 <a href="./catgory_Study123.html#overlist01" target="_blank">NAS容器如何關閉</a>`;
   nasPowerRestart.addEventListener("click", function (event) {
     event.preventDefault();
     shoutDownNas();
@@ -76,7 +76,7 @@ function shoutDownNas() {
     `;
   var nasShoutDown = document.getElementById("power-off");
   var nasShoutDownFaild = document.getElementById("shout-down-faild");
-  note.innerHTML = `技術支援網站指引 <a href="./study123.html#overlist01" target="_blank">如何關機</a>`;
+  note.innerHTML = `技術支援網站指引 <a href="./catgory_Study123.html#overlist01" target="_blank">如何關機</a>`;
   nasShoutDownFaild.addEventListener("click", function (event) {
     event.preventDefault();
     answerFail();
@@ -120,7 +120,7 @@ function only() {
     `;
   const true_BTN = document.getElementById("true");
   var done_BTN = document.getElementById("done");
-  note.innerHTML = `技術支援網站指引 <a href="./study123.html#step5" target="_blank">如何確認學生的帳號密碼?</a>`;
+  note.innerHTML = `技術支援網站指引 <a href="./catgory_Study123.html#step5" target="_blank">如何確認學生的帳號密碼?</a>`;
   done_BTN.addEventListener("click", function (event) {
     event.preventDefault();
     answerWellDone();
@@ -140,7 +140,7 @@ function all() {
     <button class="choose" id="cantTurnOn"><i class='bx bx-power-off'></i><p>無法開機</p></button>
     <button class="choose" id="on"><i class='bx bx-error' ></i><p>無法登入</p></button>
     `;
-  note.innerHTML = `技術支援網站指引 <a href="./study123.html#step2" target="_blank">NAS主機怎麼開機</a>`;
+  note.innerHTML = `技術支援網站指引 <a href="./catgory_Study123.html#step2" target="_blank">NAS主機怎麼開機</a>`;
 
   const on_BTN = document.getElementById("on");
   const cantTurnOn_BTN = document.getElementById("cantTurnOn");
@@ -170,7 +170,7 @@ function canT() {
     `;
   var done_BTN = document.getElementById("done");
   const cant_BTN = document.getElementById("cant");
-  note.innerHTML = `技術支援網站指引 <a href="./study123.html#step1" target="_blank">NAS主機怎麼開機</a><a href="https://nds.taipower.com.tw/ndsWeb/ndft112.aspx" target="_blank">台電停電查詢系統</a>`;
+  note.innerHTML = `技術支援網站指引 <a href="./catgory_Study123.html#step1" target="_blank">NAS主機怎麼開機</a><a href="https://nds.taipower.com.tw/ndsWeb/ndft112.aspx" target="_blank">台電停電查詢系統</a>`;
 
   done_BTN.addEventListener("click", function (event) {
     event.preventDefault();
@@ -190,7 +190,7 @@ function dockerOn() {
     <button class="choose" id="cantTurnOn-docker"><i class='bx bx-toggle-left' ></i><p>無法開啟</p></button>
     <button class="choose" id="on-docekr"><i class='bx bx-error' ></i><p>仍無法登入</p></button>
     `;
-  note.innerHTML = `技術支援網站指引 <a href="./study123.html#step3" target="_blank">怎麼開啟容器</a>`;
+  note.innerHTML = `技術支援網站指引 <a href="./catgory_Study123.html#step3" target="_blank">怎麼開啟容器</a>`;
   const dockerOn_BTN = document.getElementById("on-docekr");
   const cantTurnOn_docker_BTN = document.getElementById("cantTurnOn-docker");
   const done_BTN = document.getElementById("done");
@@ -218,7 +218,7 @@ function resetSoftware() {
     `;
   var doneBtn = document.getElementById("done");
   const resetBtn = document.getElementById("reset");
-  note.innerHTML = `技術支援網站指引 <a href="./study123.html#step4" target="_blank">如何重新安裝Study123</a>`;
+  note.innerHTML = `技術支援網站指引 <a href="./catgory_Study123.html#step4" target="_blank">如何重新安裝Study123</a>`;
 
   doneBtn.addEventListener("click", function (event) {
     event.preventDefault();
@@ -241,7 +241,7 @@ function configIP() {
     `;
   var doneBtn = document.getElementById("done");
   const settedBtn = document.getElementById("setted");
-  note.innerHTML = `技術支援網站指引 <a href="./study123.html#step4" target="_blank">如何修改config.txt IP</a>`;
+  note.innerHTML = `技術支援網站指引 <a href="./catgory_Study123.html#step4" target="_blank">如何修改config.txt IP</a>`;
 
   doneBtn.addEventListener("click", function (event) {
     event.preventDefault();
