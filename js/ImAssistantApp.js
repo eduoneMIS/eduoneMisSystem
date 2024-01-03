@@ -266,7 +266,7 @@ function answerWellDone() {
   bigTitle.innerHTML = `<i class='bx bx-like'></i>
     <h2 class="title-text">您已完成基本操作</h2>`;
   qustion.innerHTML = `<p class="prompt-message">恭喜您</p>`;
-  note.innerHTML = `如有其他疑問請點選 <a href="./im-assistant.html">返回助手</a>`;
+  note.innerHTML = `如有其他疑問請點選 <a href="./assistant.html">返回助手</a>`;
 }
 
 // -------- MENU --------
