@@ -327,7 +327,7 @@ function unsolvedProblem() {
   // 更新頁面問題區塊，顯示提示訊息
   qustion.innerHTML = `
   <p class="prompt-message">問題已涉及專業領域須由工程師處理<br>
-  <span style="border-bottom:2px solid #0f4c81;">請務必於LINE@再次告知我們您無法解決問題<br>並靜待資訊部回覆</span>
+  <span style="border-bottom:2px solid #0f4c81;">請務必於LINE@再次告知我們您無法解決<br>並靜待資訊部回覆</span>
   </p>`;
   // 更新備註區塊，顯示聯繫金鑫資訊部的訊息
   note.textContent = `於工作日9:30至21:00間回覆您`;
