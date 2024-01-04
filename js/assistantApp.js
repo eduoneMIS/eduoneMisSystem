@@ -325,9 +325,12 @@ function unsolvedProblem() {
   bigTitle.innerHTML = `<i class='bx bxs-no-entry'></i>
     <h2 class="title-text">非常抱歉</h2>`;
   // 更新頁面問題區塊，顯示提示訊息
-  qustion.innerHTML = `<p class="prompt-message">您的問題可能較為複雜，涉及專業領域須由工程師處理</p>`;
+  qustion.innerHTML = `
+  <p class="prompt-message">問題已涉及專業領域須由工程師處理<br>
+  <span style="border-bottom:2px solid #0f4c81;">請務必於LINE@再次告知我們您無法解決問題<br>並靜待資訊部回覆</span>
+  </p>`;
   // 更新備註區塊，顯示聯繫金鑫資訊部的訊息
-  note.textContent = `請於工作日的9:30至21:00，聯繫金鑫資訊部`;
+  note.textContent = `於工作日9:30至21:00間回覆您`;
 }
 
 // 問題已解決
