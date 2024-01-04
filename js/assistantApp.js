@@ -34,7 +34,7 @@ function checkPowerStatus() {
   // 更新頁面問題區塊，顯示電力狀態選項按鈕
   qustion.innerHTML = `
     <button class="choose" id="ready-to-cut"><i class='bx bx-shield-quarter'></i><p>將要停電</p></button>
-    <button class="choose" id="power-restart"><i class='bx bx-reset'></i><p>電力已恢復</p></button>
+    <button class="choose" id="power-restart"><i class='bx bx-reset'></i><p>供電正常</p></button>
     `;
   // 獲取電力恢復和將要停電按鈕元素
   var areaPowerRestart = document.getElementById("power-restart");
@@ -64,7 +64,7 @@ function enableNasDocker() {
   qustion.innerHTML = `
     <button class="choose" id="done"><i class='bx bx-like'></i><p>已可登入</p></button>
     <button class="choose" id="cantTurnOn-docker"><i class='bx bx-toggle-left' ></i><p>無法開啟</p></button>
-    <button class="choose" id="on-docekr"><i class='bx bx-error' ></i><p>仍無法登入</p></button>
+    <button class="choose" id="on-docekr"><i class='bx bx-error' ></i><p>開啟了<br>仍無法登入</p></button>
     `;
 
   // 更新備註區塊，顯示技術支援網站指引
@@ -126,7 +126,7 @@ function fixNasBootError() {
   // 更新頁面問題區塊，顯示兩個選項按鈕
   qustion.innerHTML = `
     <button class="choose" id="done"><i class='bx bx-like'></i><p>已正常開機</p></button>
-    <button class="choose" id="cant"><i class='bx bx-error' ></i><p>仍無法開機</p></button>
+    <button class="choose" id="cant"><i class='bx bx-error' ></i><p>供電正常<br>無法開機</p></button>
     `;
   // 取得按鈕的 DOM 元素
   var done_BTN = document.getElementById("done");
@@ -209,7 +209,7 @@ function fixLoginErrorOnSingleComputer() {
   // 更新頁面問題區塊，顯示兩個選項按鈕
   qustion.innerHTML = `
     <button class="choose" id="done"><i class='bx bx-like'></i><p>已正常登入</p></button>
-    <button class="choose" id="true"><i class='bx bx-error' ></i><p>仍無法登入</p></button>
+    <button class="choose" id="true"><i class='bx bx-error' ></i><p>正確<br>仍無法登入</p></button>
     `;
   // 取得選項按鈕的 DOM 元素
   const true_BTN = document.getElementById("true");
@@ -237,7 +237,7 @@ function fixLoginErrorOnAllComputers() {
   qustion.innerHTML = `
     <button class="choose" id="done"><i class='bx bx-like'></i><p>已可登入</p></button>
     <button class="choose" id="cantTurnOn"><i class='bx bx-power-off'></i><p>無法開機</p></button>
-    <button class="choose" id="on"><i class='bx bx-error' ></i><p>無法登入</p></button>
+    <button class="choose" id="on"><i class='bx bx-error' ></i><p>已開機<br>仍無法登入</p></button>
     `;
   // 更新備註區塊，顯示技術支援網站指引
   note.innerHTML = `技術支援網站指引 <a href="./category_Study123.html#step2">NAS主機怎麼開機</a>`;
@@ -270,7 +270,7 @@ function replaceStudy123Software() {
   // 更新頁面問題區塊，顯示兩個選項按鈕
   qustion.innerHTML = `
     <button class="choose" id="done"><i class='bx bx-like'></i><p>已正常登入</p></button>
-    <button class="choose" id="reset"><i class='bx bx-error' ></i><p>仍無法登入</p></button>
+    <button class="choose" id="reset"><i class='bx bx-error' ></i><p>重裝過<br>仍無法登入</p></button>
     `;
 
   // 獲取按鈕的 DOM 元素
@@ -300,7 +300,7 @@ function editConfigIP() {
   // 更新頁面問題區塊，顯示兩個選項按鈕
   qustion.innerHTML = `
     <button class="choose" id="done"><i class='bx bx-like'></i><p>已正常登入</p></button>
-    <button class="choose" id="setted"><i class='bx bx-error' ></i><p>仍無法登入</p></button>
+    <button class="choose" id="setted"><i class='bx bx-error' ></i><p>修改過<br>仍無法登入</p></button>
     `;
   // 獲取按鈕的 DOM 元素
   var doneBtn = document.getElementById("done");
