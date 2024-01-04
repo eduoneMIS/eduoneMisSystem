@@ -163,6 +163,13 @@ i {
   background-color: aliceblue;
 }
 
+footer .company-footer {
+  color: white;
+  text-align: center;
+  align-items: center;
+  margin: 10px auto 20px auto;
+}
+
 @media (max-width: 685px) {
   body {
     margin-top: 90px;

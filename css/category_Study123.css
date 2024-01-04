@@ -181,6 +181,13 @@ ol li {
   margin: auto 5px auto auto;
 }
 
+footer .company-footer {
+  color: white;
+  text-align: center;
+  align-items: center;
+  margin: 10px auto 20px auto;
+}
+
 @media (max-width: 660px) {
   .title-bar .page-title {
     text-align: left;
