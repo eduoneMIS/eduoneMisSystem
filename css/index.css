@@ -207,6 +207,10 @@ footer .company-footer {
     display: none;
   }
 
+  footer .company-footer {
+    font-size: 12px;
+  }
+
   .conponent {
     margin: 0 20px 20px 20px;
   }
